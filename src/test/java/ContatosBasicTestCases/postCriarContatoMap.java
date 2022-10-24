@@ -1,4 +1,4 @@
-package TestCases;
+package ContatosBasicTestCases;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -26,7 +26,7 @@ public class postCriarContatoMap {
 
         requestBody.put("name", "Eduarda");
         requestBody.put("last_name", "Keller");
-        requestBody.put("email", "dudask1234@teste.com.br");
+        requestBody.put("email", "dk12345@teste.com.br");
         requestBody.put("age", "23");
         requestBody.put("phone", "6765545");
         requestBody.put("address", "Rua Torta");

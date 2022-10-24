@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "object",
+      "default": {},
+      "title": "The data Schema",
+      "required": [
+        "id",
+        "type",
+        "attributes"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "default": "",
+          "title": "The id Schema",
+          "examples": [
+            "3740"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "default": "",
+          "title": "The type Schema",
+          "examples": [
+            "contacts"
+          ]
+        },
+        "attributes": {
+          "type": "object",
+          "default": {},
+          "title": "The attributes Schema",
+          "required": [
+            "name",
+            "last-name",
+            "email",
+            "age",
+            "phone",
+            "address",
+            "state",
+            "city"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "default": "",
+              "title": "The name Schema",
+              "examples": [
+                "Eduarda"
+              ]
+            },
+            "last-name": {
+              "type": "string",
+              "default": "",
+              "title": "The last-name Schema",
+              "examples": [
+                "Keller"
+              ]
+            },
+            "email": {
+              "type": "string",
+              "default": "",
+              "title": "The email Schema",
+              "examples": [
+                "dk12345@teste.com.br"
+              ]
+            },
+            "age": {
+              "type": "string",
+              "default": 0,
+              "title": "The age Schema",
+              "examples": [
+                23
+              ]
+            },
+            "phone": {
+              "type": "string",
+              "default": "",
+              "title": "The phone Schema",
+              "examples": [
+                "6765545"
+              ]
+            },
+            "address": {
+              "type": "string",
+              "default": "",
+              "title": "The address Schema",
+              "examples": [
+                "Rua Torta"
+              ]
+            },
+            "state": {
+              "type": "string",
+              "default": "",
+              "title": "The state Schema",
+              "examples": [
+                "RS"
+              ]
+            },
+            "city": {
+              "type": "string",
+              "default": "",
+              "title": "The city Schema",
+              "examples": [
+                "Porto Alegre"
+              ]
+            }
+          },
+          "examples": [{
+            "name": "Eduarda",
+            "last-name": "Keller",
+            "email": "dk12345@teste.com.br",
+            "age": 23,
+            "phone": "6765545",
+            "address": "Rua Torta",
+            "state": "RS",
+            "city": "Porto Alegre"
+          }]
+        }
+      },
+      "examples": [{
+        "id": "3740",
+        "type": "contacts",
+        "attributes": {
+          "name": "Eduarda",
+          "last-name": "Keller",
+          "email": "dk12345@teste.com.br",
+          "age": 23,
+          "phone": "6765545",
+          "address": "Rua Torta",
+          "state": "RS",
+          "city": "Porto Alegre"
+        }
+      }]
+    }
+  },
+  "examples": [{
+    "data": {
+      "id": "3740",
+      "type": "contacts",
+      "attributes": {
+        "name": "Eduarda",
+        "last-name": "Keller",
+        "email": "dk12345@teste.com.br",
+        "age": 23,
+        "phone": "6765545",
+        "address": "Rua Torta",
+        "state": "RS",
+        "city": "Porto Alegre"
+      }
+    }
+  }]
+}
