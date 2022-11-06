@@ -15,6 +15,7 @@ public class FakerGenerator {
 
     public String getEmail(){
         String email = faker.internet().emailAddress();
+        FileOperation.setProperties("UserData", "email", email);
         return email;
     }
 

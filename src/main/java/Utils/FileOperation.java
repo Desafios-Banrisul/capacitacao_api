@@ -28,7 +28,7 @@ public class FileOperation {
     }
 
 
-    public void setProperties(String fileName, String propKey, String propValue) throws IOException {
+    public static void setProperties(String fileName, String propKey, String propValue) {
         Properties prop = getProperties(fileName);
         try {
             OutputStream outputStream = new FileOutputStream(DIR_PATH_PROPERTIES + fileName + ".properties");
