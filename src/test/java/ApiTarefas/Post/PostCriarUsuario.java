@@ -2,10 +2,7 @@ package ApiTarefas.Post;
 
 import Models.CriarUsuarioModel;
 import TestBases.TestBase;
-import Utils.FileOperation;
 import Utils.ObjectUtils;
-import io.restassured.module.jsv.JsonSchemaValidator;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
 
 import java.util.Map;
